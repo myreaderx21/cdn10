@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatmo: Map and API for points of interest for real estate market</title>
+    <meta name="description" content="Yatmo is a service that displays Points of interest on your website: schools, shops, public transport, highway entrances, etc." />
+    <meta name="keywords" content="POI, points of interest, real estate, Map, API" />
+    <meta name="author" content="Yatmo SRL" />
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+    
+
+    
+
+    
+        <link href="/css/main.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcEjb8ZAAAAAFHd-6EPuVEkyPlZaZq0JVTNPCeS"></script>
+</head>
+<body>
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grt-cookie">
+        <div class="grt-cookies-msg">
+            <p>We use cookies to ensure that we give you the best experience on our website. If you choose to continue on this website, we will assume that you accept our cookies.</p>
+        </div>
+        <span class="grt-cookie-button">Accept</span>
+    </div>
+
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="/">
+                    <img src="/images/logo-dark.png" height="24" alt="Yatmo logo">
+                </a>
+            </div>
+
+            <div class="buy-button">
+
+                <div class="dropdown login-btn-primary">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" style="line-height: 40px;" href="/images/swagger-logo-horizontal.jpeg">FR</a>
+                            <a class="dropdown-item" style="line-height: 40px;" href="/images/swagger-logo-horizontal.jpeg">NL</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown login-btn-light">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" style="line-height: 40px;" href="/images/swagger-logo-horizontal.jpeg">FR</a>
+                            <a class="dropdown-item" style="line-height: 40px;" href="/images/swagger-logo-horizontal.jpeg">NL</a>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--end container-->
+    </header><!--end header-->
+
+    <section class="bg-home d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 text-center">
+                <div class="text-uppercase mt-4 display-3">Oh ! no</div>
+                    <div class="text-capitalize text-dark mb-4 error-page">An unexpected error occured</div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-12 text-center">  
+                <a href="https://yatmo.com" class="btn btn-primary mt-4 ml-2">Home</a>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <h3>Yatmo SRL</h3>
+                    <p>Do not hesitate to contact us for any questions about our services!</p>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-4 pt-sm-0">
+                    <h4 class="text-light footer-head">Address</h4>
+                    <p>
+                        Avenue de la Brême 15<br />
+                        1160 Brussels<br />
+                        Belgium
+                    </p>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-4 pt-sm-0">
+                    <h4 class="text-light footer-head">Contact</h4>
+                    <p>
+                        <span>Phone: <a href="tel:+33491597199">+32 (0) 491 597 199</a></span><br />
+                        <span>Email: <a href="mailto:info@yatmo.com">info@yatmo.com</a></span>
+                    </p>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2016-2020 Yatmo SRL | <a href="/en/legal/termsofsales">Terms of sales</a> | <a href="/en/legal/privacyandgdpr">Privacy policy &amp; GDPR</a></p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+
+    
+
+    
+        <script src="/js/main.min.js"></script>
+    
+
+
+    <script type="text/javascript">
+        $('form.auth').submit(function (e) {
+            var $form = $(this);
+            e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LcEjb8ZAAAAAFHd-6EPuVEkyPlZaZq0JVTNPCeS', { action: 'login' }).then(function (token) {
+                    $('#hiddenToken').val(token);
+                    $form.unbind('submit').submit();
+                });
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
